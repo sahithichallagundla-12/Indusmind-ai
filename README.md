@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# INDUSMIND AI — Unified Warehouse & Operations Brain
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Transform unstructured warehouse manuals, standard operating procedures, and safety checklists into real-time operational intelligence.
 
-Currently, two official plugins are available:
+**INDUSMIND AI** is a world-class enterprise knowledge intelligence platform designed as a central operations brain for smart warehouses, distribution centers, logistics hubs, and asset-intensive facilities. Built in style of premium SaaS interfaces (Stripe, Linear, Apple), it offers a dark-theme, interactive dashboard that acts as the single source of truth for assets, compliance, and logs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Modules & Capabilities
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. 📊 Executive Dashboard
+* **Real-time Metrics**: Displays active monitoring states including processed documents, LangGraph knowledge connections, active sensor anomalies, and regulatory audit gaps.
+* **Warehouse Load Monitoring**: Features interactive area charts visualizing active sorting load throughput and subsystem stress indicators.
+* **Recent Activity Feed**: Keeps operators updated with live, chronological warehouse ingestion logs and alert status updates.
 
-## Expanding the ESLint configuration
+### 2. 📂 Document Center
+* **Ingestion Dropzone**: Simulates file upload interfaces for onboarding warehouse SOPs, equipment guides, and fire hazard checklists.
+* **Filtered Repositories**: Sorts files automatically under categories such as *SOP Manuals*, *Equipment Specs*, *Safety Guidelines*, and *Compliance Reports*.
+* **Interactive Document Drawer**: Explores parsed PDF metadata, document authors, sizing, and excerpted chunks.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 3. 💬 AI Copilot
+* **RAG Retrieval Engine**: Queries warehouse manuals using suggested prompt chips like *"Show maintenance history for Conveyor Belt B-04"* or *"List safety audits for Zone C"*.
+* **Interactive Citations**: Every AI response references source documents with interactive badges. Clicking a citation badge instantly takes the operator to that file in the Document Center.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 4. 🔧 Maintenance Intel
+* **Diagnostics Watchlist**: Displays anomaly logs for assets such as `Conveyor Belt B-04` (vibration offsets), `Forklift FL-12` (pressure seals), and `Barcode Scanner Net` (scanner drifts).
+* **Action Dispatcher**: Updates subsystem states (e.g. *Open*, *Investigating*, *Scheduled*, *Resolved*) and routes instructions.
+* **Vibration Charts**: Visualizes wear index projections versus failure rates using Recharts.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 5. 🛡️ Compliance Intel
+* **Regulatory Checklists**: Links operations with OSHA Title 29 safety audit protocols.
+* **Audit Index Score**: Keeps track of facility readiness with automated calculations and predicted score updates.
+* **Manual Compiler**: Compiles historical safety audit sheets and triggers celebration feedback upon compliance documentation success.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 6. 📖 Lessons Learned
+* **Bottleneck Chronology**: Lists historical operational incidents, root-cause analyses (RCA), and permanent corrective actions (e.g. conveyor belt tension adjustments).
+* **Brain Shortcuts**: Consults the AI Copilot on specific historical breakdowns directly from the catalog timeline.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 7. 🕸️ Knowledge Graph
+* **Interactive Canvas**: Renders a custom SVG topology network illustrating the relationships between technical specs, safety guidelines, and active assets.
+* **Force-Directed Controls**: Supports zooming (in/out) and coordinate panning. Clicking nodes pulls up their active connection directory in the side inspector.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 8. 📈 Predictive Analytics
+* **Throughput Regressions**: Projects stress curves and wear limits across M3, M6, or M12 ranges.
+* **Life Warning Indicators**: Visually highlights wear limit warnings for active hydraulic valves, actuators, and belts.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 9. ⚙️ Settings
+* **Model Inference Sliders**: Adjusts LLM temperature, context windows, and primary inference models.
+* **Vector DB Validator**: Tests and validates connection states to custom database schemas.
+* **Access Credentials**: Manages live developer keys and organizational user permissions.
+
+---
+
+## 🛠️ Technology Stack
+
+* **Core**: React 19, TypeScript, Vite
+* **Styling**: Tailwind CSS, PostCSS (configured with premium custom dark scrollbars and frosted glass `.glass-panel` utilities)
+* **Visualization**: Recharts (Composed & Area charts customized for dark slate tooltips)
+* **Icons**: Lucide React
+* **Feedback Utilities**: Canvas Confetti
+
+---
+
+## 💻 Local Installation & Setup
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your local machine.
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd "Intelligent documents analyzer"
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the local development server**:
+   ```bash
+   npm run dev
+   ```
+   * The application will run locally at [http://localhost:5173](http://localhost:5173).
+
+4. **Build the production bundle**:
+   ```bash
+   npm run build
+   ```
+   * Compiles the TypeScript configurations and generates optimized build assets in the `/dist` directory.
